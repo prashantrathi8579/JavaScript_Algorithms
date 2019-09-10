@@ -5,7 +5,7 @@
 * Is an stable sort: maintains the order of the similar key in sorting result
 *
 * Time complexity: O(NlogN) (Average case), O(NlogN) (Worst case)
-* Space complexity: O(n)
+* Space complexity: O(n): Mergesort requires auxilliary array of input data size.
 *
 * Its recommended to use insertion sort for smaller dataset.
 * 
