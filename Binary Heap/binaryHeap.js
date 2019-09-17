@@ -3,7 +3,7 @@
 * Priority Queue is highly used algorithm across various situations.
 * Situation 1: Out of many input data process firstly the one with high priority.
 * Situation 2: Client wants to maintain only top 100 investers out of 
-* million investors to server top 100 on Priority.
+* million investors to serve top 100 on Priority.
 * 
 * There are two types of binary heaps:
 * a) Max Heap: provide a way to fetch max key and process it. Max key will be removed from the
