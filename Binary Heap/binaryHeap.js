@@ -49,23 +49,18 @@ class PriorityQ {
     }
 
     // Used  for MaxHeap order maintenance.
-    less (idx1, idx2) {
-        if (this.data[idx1] < this.data[idx2])
+   less (idx1, idx2) {
+        if (this.data[idx1] && this.data[idx2] && this.data[idx1] < this.data[idx2])
             return true;
         return false;
     }
     
-    // Used for MinHeap order maintenance
-    greater (idx1, idx2) {
-        if (this.data[idx1] > this.data[idx2]) 
-            return true;
-        return false;
-    }
-
     exchange (idx1, idx2) {
-        let temp = this.data[idx1];
-        this.data[idx1] = this.data[idx2];
-        this.data[idx2] = temp;
+        if (idx1 !== idx2) {
+            let temp = this.data[idx1];
+            this.data[idx1] = this.data[idx2];
+            this.data[idx2] = temp;
+        }
     }
 
     /* Insert method start at index 1. Starting at index one is done for the ease
@@ -150,6 +145,7 @@ console.log("Heap Ordered Data: ");
 const heap = pq.display();
 
 // Situation 1: Process in the order of highest key first.
-for (let index = 0; index < heap.length; ++index) {
+// Looping length - 1 since we store data from index 1 only.
+for (let index = 0; index < heap.length - 1; ++index) {
     console.log(pq.delMax())
 }
