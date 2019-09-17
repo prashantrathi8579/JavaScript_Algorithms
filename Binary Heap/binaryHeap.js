@@ -124,9 +124,10 @@ class PriorityQ {
     }
 
     // Helper method display to print the entire data.
-    display() {
-        console.log(this.data);
-        return this.data;
+     display() {
+        for (let index = 1; index <= this.N; ++index) {
+            console.log(this.data[index]);
+        }
     }
     
 };
