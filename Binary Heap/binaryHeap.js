@@ -103,7 +103,7 @@ class PriorityQ {
         while (k < this.N) {
             let j = 2*k;
             if (j < this.N && this.less(j, j+1)) j++;
-            if(!this.less(k, j)) break;
+            if(j > this.N || !this.less(k, j)) break;
             this.exchange(k, j);
             k = j;
         }
