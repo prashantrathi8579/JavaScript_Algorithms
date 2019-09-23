@@ -11,8 +11,10 @@
 * HeapSort: Yes, only algorithm which is simple inplace guaranteed NlogN
 *
 * HeapSort is optimal for both time and space but heapSort is not used extinsevely.
-* It is not stable sort.
-* When data is very high inner loop is longer than quickSort due to many comparisons
+* It is not stable sort. Heap Sort does long exchanges which brings data out of the order 
+* and removes stability. Sometimes people use MergeSort due to stability.
+*
+* When data is very high, inner loop is longer than quickSort due to many comparisons.
 * 
 */
 
