@@ -53,7 +53,7 @@ class PriorityQMinHeap {
         while (k < this.N) {
             let j = 2*k;
             if (j < this.N && this.greater(j, j+1)) j++;
-            if(!this.greater(k, j)) break;
+            if(j > this.N || !this.greater(k, j)) break;
             this.exchange(k, j);
             k = j;
         }
