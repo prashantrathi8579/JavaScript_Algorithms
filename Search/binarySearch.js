@@ -10,7 +10,6 @@
 
 
 const binarySearch = (data, key, lo, hi) => {
-
     let index = -1;
     while(lo <= hi) {
         let mid = Math.floor(lo + (hi - lo)/2),
