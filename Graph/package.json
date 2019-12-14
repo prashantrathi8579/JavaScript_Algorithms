@@ -1,0 +1,16 @@
+{
+  "name": "graph",
+  "version": "1.0.0",
+  "description": "Graph usage demo",
+  "main": "usage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow"
+  },
+  "author": "Prashant Rathi",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.114.0"
+  },
+  "dependencies": {}
+}
