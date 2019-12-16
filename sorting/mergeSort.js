@@ -1,6 +1,7 @@
 /* MergeSort Features:
 * 
-* Divide And Conquer algorithm: Breaking down the problem recursively into two or more sub-problems of the same and related type.
+* Divide And Conquer algorithm: Breaking down the problem recursively into two or more sub-problems of the same 
+* and related type.
 * 
 * Is an stable sort: maintains the order of the similar key in sorting result
 *
