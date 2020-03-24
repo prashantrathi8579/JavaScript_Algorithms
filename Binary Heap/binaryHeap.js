@@ -36,7 +36,7 @@
 * 3) If the node at position k, (index k in the array) then its parent is at k/2.
 * 
 * 4) The other way, its easy to see that the children of the node at k are 2k and 2k + 1
-* Since we have access to parent and children through indeces, so we don't need
+* Since we have access to parent and children through indices, so we don't need
 * any explicit links. Just indexes will help to move around.
 * 
 */ 
