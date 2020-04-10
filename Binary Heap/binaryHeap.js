@@ -143,10 +143,12 @@ for(let index = 0; index < data.length; ++index) {
 }
 
 console.log("Heap Ordered Data: ");
-const heap = pq.display();
+pq.display();
 
 // Situation 1: Process in the order of highest key first.
-// Looping length - 1 since we store data from index 1 only.
-for (let index = 0; index < heap.length - 1; ++index) {
+// delMax picks the value at index 1 (arrangement is done from index 1 for the ease of calculations) 
+// and return the max value and clears it from the array.
+console.log("Process highest keys first order: ");
+for (let index = 0; index < data.length; ++index) {
     console.log(pq.delMax())
 }
