@@ -54,7 +54,7 @@ class HeapSort {
     */
     sink(data, k, N,) {
         while(k < N) {
-            let j = 2*k + 1;
+            let j = 2*k;
             if (j < N && this.less(data, j, j+1)) j++;
             if (j > N || !this.less(data, k, j)) return;
             this.exchange(data, k, j);
