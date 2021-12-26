@@ -6,9 +6,13 @@ class PriorityQMinHeap {
 
     // Used for MinHeap order maintenance
     greater (idx1, idx2) {
-        if (this.data[idx1] && this.data[idx2] && this.data[idx1] > this.data[idx2]) 
-            return true;
-        return false;
+      if (
+            (this.data[idx1] || this.data[idx1] === 0) &&
+            (this.data[idx2] || this.data[idx2] === 0) &&
+            this.data[idx1] > this.data[idx2]
+        )
+        return true;
+     return false;
     }
 
     exchange (idx1, idx2) {
@@ -83,7 +87,7 @@ class PriorityQMinHeap {
     size() {
         // ignoring 0th index from the length.
         // We are inserting from index 1 for the ease of PQ implementation.
-        return this.data.length - 1;
+        return this.N;
     }
 };
 
